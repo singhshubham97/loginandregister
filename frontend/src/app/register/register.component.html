@@ -1,0 +1,35 @@
+<div class="medium-list"> 
+    <div class="list-viewer-wrapper">
+        <div class="list-header-title">Register</div>
+        <form [formGroup]="registerForm" (ngSubmit)="registerForm.valid && onRegisterSubmit()" novalidate>
+            <div class="form-container">
+                <mat-form-field>
+                    <input id="userName"
+                           matInput
+                           formControlName="userName"
+                           [(ngModel)]="user.username"
+                           placeholder="Enter your username" />
+                </mat-form-field>
+                <mat-form-field>
+                    <input id="emailId"
+                           matInput
+                           formControlName="emailId"
+                           [(ngModel)]="user.emailid"
+                           placeholder="Enter your email id" />
+                </mat-form-field>
+                <mat-form-field>
+                    <input id="password"
+                           matInput
+                           formControlName="password"
+                           [(ngModel)]="user.password"
+                           placeholder="Enter your password" />
+                </mat-form-field>
+                <button mat-button type="submit" class="mat-raised-button mat-primary" [disabled]="!registerForm.valid">Register</button>
+                <button mat-button routerLink="/login" class="divider">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<app-footer></app-footer>
+<router-outlet></router-outlet>

@@ -1,0 +1,39 @@
+@import '~@angular/material/theming';
+@include mat-core();
+$my-theme-primary:mat-palette($mat-indigo);
+$my-theme-accent:mat-palette($mat-pink, A200, A100, A400);
+$my-theme-warn:mat-palette($mat-red);
+$my-theme: mat-light-theme($my-theme-primary,$my-theme-accent,$my-theme-warn);
+@include angular-material-theme($my-theme);
+.spacer {
+    flex-grow: 1;
+}
+
+
+.medium-list {
+    margin: auto;
+    width: 600px;
+    padding: 10px;
+  }
+     
+  .list-viewer-wrapper {
+    border: 1px solid rgba(0, 0, 0, .03);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .24), 0 0 2px rgba(0, 0, 0, .12);
+    margin: 4px;
+  }
+  
+  .list-header-title {
+    color: rgba(0, 0, 0, .54);
+    background-color: #3f51b5  ;
+    padding: 8px 20px;
+    font-weight: bold;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .divider {
+    margin-top: 10px !important; 
+  }
