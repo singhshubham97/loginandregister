@@ -2,6 +2,7 @@
 html,body{
     height:100%;
     text-align: center;
+  min-height: 100%;
 }
 
 *{
@@ -88,6 +89,6 @@ html,body{
 .mat-divider{
     height: 10px;
     background-color:white;
-    
+
 }
 
