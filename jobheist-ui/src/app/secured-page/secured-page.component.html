@@ -1,0 +1,10 @@
+<p>secured-page works!</p>
+<div *ngFor="let user of userlist" fxLayout="column">
+    <div>
+        <span>{{user.emailid}}</span><br>
+        <span>{{user.password}}</span><br>
+        <span>{{user.username}}</span><br><br>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,122 @@
+<!-- Nav Bar-->
+<app-profile-navbar></app-profile-navbar>
+  
+
+<mat-divider></mat-divider>
+<section class="backgroundcol">
+    <div fxLayout="column" fxLayoutAlign="center" id="parent">
+      <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center" fxLayoutGap="5%" fxLayoutGap.lt-sm="1%">
+        
+        <div fxLayout="column" fxLayoutAlign="center" fxLayout.lt-md="row" fxLayoutGap="3%" fxLayoutGap.lt-sm="1%">
+          <mat-card class="example-card">
+            
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-header>
+                <mat-card-title>Ayush Parasar</mat-card-title>
+                <mat-card-subtitle>Software Engineer at CGI</mat-card-subtitle>
+            </mat-card-header>
+          </mat-card>
+
+          <mat-card class="example-card">
+            <div fxLayout="row">
+              <div>
+            <mat-card-header>
+              <mat-card-title>Skills</mat-card-title>
+            </mat-card-header>
+          
+                <mat-card-content>
+                  <ul class="skills" *ngFor="let skill of skillsList">
+                    <li>
+                     {{skill.skillName}}
+                    </li>
+                   
+                  </ul>
+                 </mat-card-content>
+              
+                </div>
+            
+            <div id="edit-skills-button">
+              <button mat-icon-button (click)="onEditSkillsClick()">
+                <mat-icon>create</mat-icon>
+              </button>
+              
+            </div>
+          </div>
+          </mat-card>
+
+
+        </div>
+          
+          
+
+
+          
+
+        <div fxLayout="column" fxLayoutGap="5%" fxLayoutAlign="center" fxLayoutGap.lt-sm="1%">
+          <div fxLayout="row" fxLayoutAlign="center" >
+            <mat-card class="example-card profile-card">
+              <mat-card-title>Personal Information </mat-card-title>
+              <mat-card-content>
+                <div fxLayout="row">
+                  <div>
+                    <form class="info-form" [formGroup]="infoUpdateForm" (ngSubmit)="onInfoEdit()">
+                      <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Email Id</mat-label>
+                        <input matInput formControlName="emailid" [(ngModel)]="emailid">
+                      </mat-form-field>
+
+                      <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Current Location</mat-label>
+                        <input matInput formControlName="currentLocation" [(ngModel)]="currentLocation">
+                      </mat-form-field>
+
+                      <mat-form-field appearance="outline" class="full-width">
+                        <mat-label>Date of birth</mat-label>
+                        <input matInput formControlName="dob" [matDatepicker]="picker" [(ngModel)]="dob">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                      </mat-form-field>
+
+                      <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Preferred Location</mat-label>
+                        <input matInput formControlName="preferredLocation" [(ngModel)]="preferredLocation">
+                      </mat-form-field>
+                      <div fxLayout="row" *ngIf="!disabled" fxLayout.lt-sm="column" fxLayoutGap="3%" fxLayoutGap.lt-sm="5px" fxLayoutAlign="center">
+                      <button mat-raised-button color="primary" 
+                      type="submit" [disabled]="!infoUpdateForm.valid" >Save</button>
+                      <button mat-raised-button   
+                      (click)="onEditCancel()">Cancel</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div>
+                    <button mat-icon-button (click)="onEditClick()">
+                      <mat-icon>create</mat-icon>
+                    </button>
+                    
+                  </div>
+
+                </div>
+                
+                
+               </mat-card-content>
+
+             
+                
+            </mat-card> 
+            
+          </div>
+          
+          <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="3%" fxLayoutGap.lt-sm="5px" fxLayoutAlign="center">
+            <button mat-raised-button color="primary">UPLOAD YOUR RESUME</button>
+            <button mat-raised-button color="primary">BUILD YOUR RESUME</button>
+          </div>
+        
+        </div>
+         
+      </div>
+      
+    </div>
+</section>
+
+<app-footer></app-footer>

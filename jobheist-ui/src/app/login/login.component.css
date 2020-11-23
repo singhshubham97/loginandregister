@@ -1,10 +1,6 @@
-@import '~@angular/material/theming';
-@include mat-core();
-$my-theme-primary:mat-palette($mat-indigo);
-$my-theme-accent:mat-palette($mat-pink, A200, A100, A400);
-$my-theme-warn:mat-palette($mat-red);
-$my-theme: mat-light-theme($my-theme-primary,$my-theme-accent,$my-theme-warn);
-@include angular-material-theme($my-theme);
+#errmsg{
+    color: red;
+}
 .spacer {
     flex-grow: 1;
 }
@@ -13,7 +9,7 @@ $my-theme: mat-light-theme($my-theme-primary,$my-theme-accent,$my-theme-warn);
 .medium-list {
     margin: auto;
     width: 50%;
-    padding: 10px;
+    padding: 40px;
   }
      
   .list-viewer-wrapper {
@@ -23,7 +19,7 @@ $my-theme: mat-light-theme($my-theme-primary,$my-theme-accent,$my-theme-warn);
   }
   
   .list-header-title {
-    color: rgba(0, 0, 0, .54);
+    color: rgba(255, 255, 255, 0.54);
     background-color: #3f51b5  ;
     padding: 8px 20px;
     font-weight: bold;
@@ -34,6 +30,21 @@ $my-theme: mat-light-theme($my-theme-primary,$my-theme-accent,$my-theme-warn);
     flex-direction: column;
   }
  
-  .divider {
+  h3 {
     margin-top: 10px !important; 
   }
+  .main-div{
+    padding: 40px;
+  }
+
+  .main-div mat-card{
+    padding: 0px;
+
+  }
+  .login-form{
+    padding: 30px;
+  }
+  .btn-class{
+    width: 100px!important;
+    min-width: unset!important;
+}

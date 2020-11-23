@@ -1,0 +1,46 @@
+<app-profile-navbar></app-profile-navbar>
+<div>
+    <h1>Handpicked jobs for you</h1>
+    </div>
+
+ <div *ngFor="let field of obs | async">
+   <div fxLayout.lt-sm="column" fxHide.gt-sm fxLayoutAlign="center">
+     <mat-card fxFlexAlign="center" >
+      <mat-card-header>
+        <!-- <div mat-card-avatar class="example-header-image"></div> -->
+        <mat-card-title>{{field.Organisation}}</mat-card-title>
+        <mat-card-subtitle>Role :{{field.Jobtitle}}</mat-card-subtitle>
+        <mat-card-subtitle>Location :{{field.Location}}</mat-card-subtitle>
+        <mat-card-subtitle>Experience :{{field.Experience}}</mat-card-subtitle>
+        <mat-card-subtitle>Skills :{{field.Skills}}</mat-card-subtitle>
+        <mat-card-subtitle>Salary :{{field.Salary}}</mat-card-subtitle>
+        
+      </mat-card-header>
+      <button mat-raised-button class="visit-button">Visit</button>
+     </mat-card>
+   </div>
+ </div>
+
+<div fxLayout.gt-sm="row wrap" fxLayout.lt-sm="column" fxHide.lt-sm fxLayoutAlign="center">
+  <div *ngFor="let field of obs | async">
+    <mat-card fxFlexAlign="center" >
+     <mat-card-header>
+       <!-- <div mat-card-avatar class="example-header-image"></div> -->
+       <mat-card-title>{{field.Organisation}}</mat-card-title>
+       <mat-card-subtitle>Role :{{field.Jobtitle}}</mat-card-subtitle>
+       <mat-card-subtitle>Location :{{field.Location}}</mat-card-subtitle>
+       <mat-card-subtitle>Experience :{{field.Experience}}</mat-card-subtitle>
+       <mat-card-subtitle>Skills :{{field.Skills}}</mat-card-subtitle>
+       <mat-card-subtitle>Salary :{{field.Salary}}</mat-card-subtitle>
+       
+     </mat-card-header>
+     <button mat-raised-button class="visit-button">Visit</button>
+    </mat-card>
+  </div>
+</div>
+
+
+  <mat-paginator [pageSizeOptions]="[10,15,18]" showFirstLastButtons></mat-paginator>
+  <app-footer></app-footer>
+  <router-outlet></router-outlet>
+  
