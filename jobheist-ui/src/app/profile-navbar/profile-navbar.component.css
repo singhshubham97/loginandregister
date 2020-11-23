@@ -1,0 +1,23 @@
+mat-toolbar{
+    background-color: #007CC7;
+}
+.nav-item{
+    font-size: medium;
+}
+.nav-logo{
+    font-size: large;
+}
+.notification{
+    margin-top: 0.9rem;
+}
+.mat-card-avatar{
+    height: 30px;
+    width: 30px;
+    background: black;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+    padding: 5px;
+    margin: 12px;
+    margin-left: 10px;
+}

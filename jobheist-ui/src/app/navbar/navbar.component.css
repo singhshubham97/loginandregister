@@ -1,0 +1,19 @@
+.navbar{
+    justify-content: space-between;
+}
+.nav-item{
+    font-size: medium;
+}
+.nav-logo{
+    font-size: large;
+}
+mat-toolbar{
+    background-color: #007CC7;
+}
+span{
+    padding-right: 1rem;
+}
+#login{
+    background-color: black;
+    color: white;
+}

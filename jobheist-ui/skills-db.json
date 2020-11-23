@@ -1,0 +1,12 @@
+{
+  "skill": [
+    {
+      "skillName": "django",
+      "id": 3
+    },
+    {
+      "skillName": "c++",
+      "id": 4
+    }
+  ]
+}

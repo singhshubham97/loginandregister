@@ -1,0 +1,51 @@
+<app-navbar></app-navbar>
+<section class="main-body">
+  <table>
+    <td>
+      <mat-card class="full-card">
+        <form class="hire-form" [formGroup]="jobUpdateForm" (ngSubmit)="jobUpdateForm.valid && onJobPost()">
+          <mat-form-field class="full-width">
+            <mat-label>Post</mat-label>
+            <input matInput formControlName="post" [(ngModel)]="job.post">
+          </mat-form-field>
+
+          <mat-form-field class="full-width">
+            <mat-label>Location</mat-label>
+            <input matInput formControlName="location" [(ngModel)]="job.location">
+          </mat-form-field>
+
+          <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Joining Date</mat-label>
+            <input matInput formControlName="joiningDate" [matDatepicker]="picker" [(ngModel)]="job.joiningDate">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+
+          <mat-form-field class="full-width">
+            <mat-label>Compensation</mat-label>
+            <input matInput formControlName="Compensation" [(ngModel)]="job.compensation">
+          </mat-form-field>
+
+          <mat-checkbox class="full-width" >I agree that this information is correct</mat-checkbox>
+
+          <button mat-raised-button color="primary" class="align-center" 
+          type="submit" [disabled]="!jobUpdateForm.valid">Post Now</button>
+
+        </form>
+      </mat-card>
+    </td>
+    <td>
+      <mat-card>
+        <h3>XYZ PVT. LTD.</h3>
+        <p>{{job.post}}</p>
+        <p>{{job.location}}</p>
+        <p>{{job.joiningDate}}</p>
+        <p>{{job.compensation}}</p>
+      </mat-card>
+    </td>
+
+  </table>
+</section>
+
+<app-footer></app-footer>
+<router-outlet></router-outlet>
