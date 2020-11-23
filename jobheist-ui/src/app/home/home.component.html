@@ -1,118 +1,120 @@
 <app-navbar></app-navbar>
 <!-- hero unit -->
-<div class="page-wrap">
-<section id="cover">
-    <div class="container" fxLayout="column" id="cover-caption">
-        <div class="mat-display-3" fxFlexAlign="center"> 500+ Developers Placed</div>
-        <div class="mat-title" fxFlexAlign="center">Lorem ipsum dolor sit amet consectetur</div>
-        <button mat-raised-button fxFlexAlign="center" routerLink="/choose">Get Started</button>
-        <button mat-raised-button fxFlexAlign="center" routerLink="/hire">Go To hire</button>
-        <button mat-raised-button fxFlexAlign="center" routerLink="/dashboard">dashboard</button>
+<div class="page-wrap" style="position: relative">
+    <section id="cover">
+        <div class="container" fxLayout="column" id="cover-caption">
+            <div class="mat-display-3" fxFlexAlign="center"> 500+ Developers Placed</div>
+            <div class="mat-title" fxFlexAlign="center">Lorem ipsum dolor sit amet consectetur</div>
+            <button mat-raised-button fxFlexAlign="center" routerLink="/choose">Get Started</button>
+            <button mat-raised-button fxFlexAlign="center" routerLink="/hire">Go To hire</button>
+            <button mat-raised-button fxFlexAlign="center" routerLink="/dashboard">dashboard</button>
 
-    </div>
-</section>
+        </div>
+    </section>
 
-<mat-divider></mat-divider>
+    <mat-divider></mat-divider>
 
-<!--The Publication section-->
-<section class="backgroundcol">
-    <div class="container" fxLayout="column">
-        <div class="mat-headline" fxFlexAlign="center">The Publication</div>
-        <div class="mat-body-1" fxHide.lt-sm id="publication_content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti nisi quas, laudantium nihil illum vitae maxime reiciendis deserunt vero, aliquam accusantium laborum libero a quos harum. Ex, facere. Aperiam, hic.</div>
-        <div class="news_company" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center">
-            <div fxLayout="row" fxFlexAlign="center">
+    <!--The Publication section-->
+    <section class="backgroundcol">
+        <div class="container" fxLayout="column">
+            <div class="mat-headline" fxFlexAlign="center">The Publication</div>
+            <div class="mat-body-1" fxHide.lt-sm id="publication_content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti nisi quas, laudantium nihil illum vitae maxime reiciendis deserunt vero, aliquam accusantium laborum libero a quos harum. Ex, facere. Aperiam, hic.</div>
+            <div class="news_company" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center">
+                <div fxLayout="row" fxFlexAlign="center">
+                    <button></button>
+                    <button></button>
+                </div>
+                <div fxLayout="row" fxFlexAlign="center">
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <mat-divider></mat-divider>
+    <section class="backgroundcol">
+        <div class="container">
+            <div class="mat-display-1" id="jobseeker" fxLayoutAlign="center">Are you a job seeker ?</div>
+            <div class="mat-title" fxLayoutAlign="center">Hear what they say about us!</div>
+            <div fxLayout.lt-md="column" fxLayout="row">
+                <div fxLayout.lt-sm="row" fxLayoutAlign.lt-sm="center" fxFlex="100" fxLayoutAlign="center">
+                    <mat-card>
+                        <img mat-card-image src="../../assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg" alt="testimonial img" height="250vh" width="250vw">
+                        <div class="mat-card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae</div>
+                        <mat-card-actions><button class="mat-button">Learn More</button></mat-card-actions>
+                    </mat-card>
+                </div>
+                <div fxLayout.lt-sm="row" fxLayoutAlign.lt-sm="center" fxFlex="100" fxLayoutAlign="center">
+                    <mat-card>
+                        <img mat-card-image src="../../assets/images/publicator.jpg" alt="testimonial img" height="250vh" width="250vw">
+                        <div class="mat-card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae</div>
+                        <mat-card-actions><button class="mat-button">Learn More</button></mat-card-actions>
+                    </mat-card>
+                </div>
+                <div fxLayout.lt-sm="row" fxLayoutAlign.lt-sm="center" fxFlex="100" fxLayoutAlign="center">
+                    <mat-card>
+                        <img mat-card-image src="../../assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg" alt="testimonial img" height="250vh" width="250vw">
+                        <div class="mat-card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae</div>
+                        <mat-card-actions><button class="mat-button">Learn More</button></mat-card-actions>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <mat-divider></mat-divider>
+
+    <!--Companies that trust us (Hall of fame)-->
+
+    <section class="backgroundcol">
+        <div class="mat-display-1" id="companies" fxLayoutAlign="center">Companies that trust us:</div>
+        <div class="container allcompanies" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center">
+            <div fxLayout.lt-sm="row" fxFlexAlign="center" fxLayout="column">
                 <button></button>
                 <button></button>
+                <button></button>
+                <div fxHide.lt-sm><button></button></div>
             </div>
-            <div fxLayout="row" fxFlexAlign="center">
+            <div fxLayout.lt-sm="row" fxFlexAlign="center" fxLayout="column">
                 <button></button>
                 <button></button>
+                <button></button>
+                <div fxHide.lt-sm><button></button></div>
+            </div>
+            <div fxLayout.lt-sm="row" fxFlexAlign="center" fxLayout="column">
+                <button></button>
+                <button></button>
+                <button></button>
+                <div fxHide.lt-sm><button></button></div>
+            </div>
+            <div fxLayout.lt-sm="row" fxFlexAlign="center" fxLayout="column">
+                <button></button>
+                <button></button>
+                <button></button>
+                <div fxHide.lt-sm><button></button></div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<mat-divider></mat-divider>
-<section class="backgroundcol">
-    <div class="container">
-        <div class="mat-display-1" id="jobseeker" fxLayoutAlign="center">Are you a job seeker ?</div>
-        <div class="mat-title" fxLayoutAlign="center">Hear what they say about us!</div>
-        <div fxLayout.lt-md="column" fxLayout="row">
-            <div fxLayout.lt-sm="row" fxLayoutAlign.lt-sm="center" fxFlex="100" fxLayoutAlign="center">
-                <mat-card>
-                    <img mat-card-image src="../../assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg" alt="testimonial img" height="250vh" width="250vw">
-                    <div class="mat-card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae</div>
-                    <mat-card-actions><button class="mat-button">Learn More</button></mat-card-actions>
-                </mat-card>
+    <mat-divider></mat-divider>
+
+    <!--register with us content-->
+    <section  class="backgroundcol ">
+        <div class="container" fxLayout="row" fxLayoutAlign="space-evenly center" fxLayout.lt-md="column">
+            <div fxLayout="column">
+               <span class="mat-display-1 ready"><strong>Ready to get started?</strong></span>
+               <span class="mat-display-1 ready">Sign up or contact us</span>
             </div>
-            <div fxLayout.lt-sm="row" fxLayoutAlign.lt-sm="center" fxFlex="100" fxLayoutAlign="center">
-                <mat-card>
-                    <img mat-card-image src="../../assets/images/publicator.jpg" alt="testimonial img" height="250vh" width="250vw">
-                    <div class="mat-card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae</div>
-                    <mat-card-actions><button class="mat-button">Learn More</button></mat-card-actions>
-                </mat-card>
+            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap.lt-md="10px" fxLayoutGap.gt-md="0">
+                <button class="mat-raised-button" id="registerbutton" routerLink="/choose" >Register Now</button>
+                <button class="mat-raised-button" id="contactusbutton" >Contact Us</button>
             </div>
-            <div fxLayout.lt-sm="row" fxLayoutAlign.lt-sm="center" fxFlex="100" fxLayoutAlign="center">
-                <mat-card>
-                    <img mat-card-image src="../../assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg" alt="testimonial img" height="250vh" width="250vw">
-                    <div class="mat-card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae</div>
-                    <mat-card-actions><button class="mat-button">Learn More</button></mat-card-actions>
-                </mat-card>
             </div>
-        </div>
-    </div>
-</section>
-
-<mat-divider></mat-divider>
-
-<!--Companies that trust us (Hall of fame)-->
-
-<section class="backgroundcol">
-    <div class="mat-display-1" id="companies" fxLayoutAlign="center">Companies that trust us:</div>
-    <div class="container allcompanies" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center">
-        <div fxLayout.lt-sm="row" fxFlexAlign="center" fxLayout="column">
-            <button></button>
-            <button></button>
-            <button></button>
-            <div fxHide.lt-sm><button></button></div>
-        </div>
-        <div fxLayout.lt-sm="row" fxFlexAlign="center" fxLayout="column">
-            <button></button>
-            <button></button>
-            <button></button>
-            <div fxHide.lt-sm><button></button></div>
-        </div>
-        <div fxLayout.lt-sm="row" fxFlexAlign="center" fxLayout="column">
-            <button></button>
-            <button></button>
-            <button></button>
-            <div fxHide.lt-sm><button></button></div>
-        </div>
-        <div fxLayout.lt-sm="row" fxFlexAlign="center" fxLayout="column">
-            <button></button>
-            <button></button>
-            <button></button>
-            <div fxHide.lt-sm><button></button></div>
-        </div>
-    </div>
-</section>
-
-<mat-divider></mat-divider>
-
-<!--register with us content-->
-<section  class="backgroundcol ">
-    <div class="container" fxLayout="row" fxLayoutAlign="space-evenly center" fxLayout.lt-md="column">
-        <div fxLayout="column">
-           <span class="mat-display-1 ready"><strong>Ready to get started?</strong></span>
-           <span class="mat-display-1 ready">Sign up or contact us</span>
-        </div>
-        <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap.lt-md="10px" fxLayoutGap.gt-md="0">
-            <button class="mat-raised-button" id="registerbutton" routerLink="/choose" >Register Now</button>
-            <button class="mat-raised-button" id="contactusbutton" >Contact Us</button>
-        </div>
-        </div>
-</section>
+    </section>
+    <div style="min-height: 150px"></div>
+    <app-footer></app-footer>
 </div>
-<app-footer></app-footer>
+
 <router-outlet></router-outlet>
 
